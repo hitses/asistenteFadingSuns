@@ -372,21 +372,24 @@
             </div>
           </div>
         </div>
-        <!-- Armas arrojadizas -->
-        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armasArrojadizas">
-          Armas arrojadizas
+        <!-- Armas energéticas -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armasEnergeticas">
+          Armas energéticas
         </button>
-        <div class="modal fade" id="armasArrojadizas" tabindex="-1" role="dialog" aria-labelledby="armasArrojadizasModal" aria-hidden="true">
+        <div class="modal fade" id="armasEnergeticas" tabindex="-1" role="dialog" aria-labelledby="armasEnergeticasModal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="armasArrojadizasModal">Armas arrojadizas</h5>
+                <h5 class="modal-title" id="armasEnergeticasModal">Armas energéticas</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <table class="table table-borderless table-sm">
+                <p>
+                  Todas las armas energéticas sufren una penalización de dos puntos a las tiradas realizadas a través de la niebla o el humo densos o cualquier cosa que pueda dispersar o difuminar el haz de energía.
+                </p>
+                <table class="table table-borderless table-sm table-striped">
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
@@ -395,16 +398,90 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Cuchillo arrojadizo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Láser miniatura</td>
+                      <td>200 Fénix</td>
                     </tr>
                     <tr>
-                      <td>Estrella arrojadiza</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Pistola láser</td>
+                      <td>300 Fénix</td>
                     </tr>
                     <tr>
-                      <td>Dardo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Rifle láser</td>
+                      <td>500 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Láser de asalto</td>
+                      <td>700 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Pistola bláster</td>
+                      <td>700 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Rifle bláster</td>
+                      <td>1000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Escopeta bláster</td>
+                      <td>1200 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Láser de repetición</td>
+                      <td>2500 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Cañón bláster</td>
+                      <td>5000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Disruptor masivo</td>
+                      <td>25000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Chirriador:</strong> mitad de daño redondeado hacia abajo a personajes con protección acústica.</td>
+                      <td>300 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Aturdidor:</strong> si produce daño, el objetivo tira Resistencia + Vigor. Si falla, es aturdido este turno y el siguiente. Si pifia, cae inconsciente. Si el daño es superior a la Resistencia del objetivo tira y, si falla, cae inconsciente. El daño se cura inmediatamente después de una escena. Mientras el personaje tenga daño del aturdidor y, estando aturdido,  acumule daño de otros tipos hasta que su Resistencia llegue a 0, el personaje muere.</td>
+                      <td>300 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lanzallamas:</strong> las tiradas de daño que sean 1, 2 o 3 ignoran la armadura y escudos. Luego se tiran los mismos dados de daños que se hayan producido. Cada tirada conseguida de esta manera es un daño. Si en un turno no produce daño, las llamas se apagan.</td>
+                      <td>150 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Lanzacohetes</td>
+                      <td>400 Fénix</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Munición</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Pila de fusión pequeña</td>
+                      <td>5 Fénix la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Pila de fusión grande</td>
+                      <td>10 Fénix la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Pila de fusión recargable</td>
+                      <td>50 Fénix la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Tanque de aceite ka</td>
+                      <td>5 Fénix la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Granada para lanzacohetes</td>
+                      <td>10 Fénix la unidad</td>
                     </tr>
                   </tbody>
                 </table>
@@ -412,21 +489,21 @@
             </div>
           </div>
         </div>
-        <!-- Armas arrojadizas -->
-        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armasArrojadizas">
-          Armas arrojadizas
+        <!-- Explosivos -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#explosivos">
+          Explosivos
         </button>
-        <div class="modal fade" id="armasArrojadizas" tabindex="-1" role="dialog" aria-labelledby="armasArrojadizasModal" aria-hidden="true">
+        <div class="modal fade" id="explosivos" tabindex="-1" role="dialog" aria-labelledby="explosivosModal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="armasArrojadizasModal">Armas arrojadizas</h5>
+                <h5 class="modal-title" id="explosivosModal">Explosivos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <table class="table table-borderless table-sm">
+                <table class="table table-borderless table-sm table-striped">
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
@@ -435,38 +512,37 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Cuchillo arrojadizo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Granadas</td>
+                      <td>50 Fénix la unidad</td>
                     </tr>
                     <tr>
-                      <td>Estrella arrojadiza</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Granadas de energía</td>
+                      <td>150 Fénix la unidad</td>
                     </tr>
                     <tr>
-                      <td>Dardo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td>Lanzagranadas Dreskel</td>
+                      <td>500 Fénix</td>
                     </tr>
-                  </tbody>
                 </table>
               </div>
             </div>
           </div>
         </div>
-        <!-- Armas arrojadizas -->
-        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armasArrojadizas">
-          Armas arrojadizas
+        <!-- Armas ocultas -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armasOcultas">
+          Armas ocultas
         </button>
-        <div class="modal fade" id="armasArrojadizas" tabindex="-1" role="dialog" aria-labelledby="armasArrojadizasModal" aria-hidden="true">
+        <div class="modal fade" id="armasOcultas" tabindex="-1" role="dialog" aria-labelledby="armasOcultasModal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="armasArrojadizasModal">Armas arrojadizas</h5>
+                <h5 class="modal-title" id="armasOcultasModal">Armas ocultas</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <table class="table table-borderless table-sm">
+                <table class="table table-borderless table-sm table-striped">
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
@@ -475,18 +551,21 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Cuchillo arrojadizo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td><strong>Centurión:</strong> espada en el antebrazo no unida al personaje.</td>
+                      <td>50 Fénix</td>
                     </tr>
                     <tr>
-                      <td>Estrella arrojadiza</td>
-                      <td>2 Fénix la unidad</td>
+                      <td><strong>Víbora:</strong> espada en el antebrazo unida al personaje.</td>
+                      <td>100 Fénix +350 Fénix la operación</td>
                     </tr>
                     <tr>
-                      <td>Dardo</td>
-                      <td>2 Fénix la unidad</td>
+                      <td><strong>Arpón:</strong> arpón en el antebrazo unido al personaje.</td>
+                      <td>50 Fénix +350 Fénix la operación</td>
                     </tr>
-                  </tbody>
+                    <tr>
+                      <td><strong>Jonás:</strong> arpón unido por un cable y a un mecanismo unido al brazo del personaje capaz de arrastrar hasta 100kg.</td>
+                      <td>100 Fénix +350 Fénix la operación</td>
+                    </tr>
                 </table>
               </div>
             </div>
@@ -506,7 +585,240 @@
     </div>
     <div id="armaduras" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        
+        <!-- Armaduras -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#armadurasRopa">
+          Armaduras
+        </button>
+        <div class="modal fade" id="armadurasRopa" tabindex="-1" role="dialog" aria-labelledby="armadurasModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="armadurasModal">Armaduras</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Armadura</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ropa acolcahada</td>
+                      <td>Despreciable</td>
+                    </tr>
+                    <tr>
+                      <td>Ropas pesadas</td>
+                      <td>Despreciable</td>
+                    </tr>
+                    <tr>
+                      <td>Cuero</td>
+                      <td>3 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Cuero reforzado</td>
+                      <td>8 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Cota de escamas</td>
+                      <td>20 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Cota de malla</td>
+                      <td>20 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Coraza</td>
+                      <td>30 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Armadura de metal</td>
+                      <td>40 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Armadura de plástico</td>
+                      <td>60 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Sinteseda</td>
+                      <td>300 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Polímero tejido</td>
+                      <td>200 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Acerámica</td>
+                      <td>700 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Túnica de adepto (único para Hermanos de Batalla)</td>
+                      <td>4500 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Eevsu'ud Rumuld'hansth (Vaina vital):</strong> protege totalmente al portador, pero le imposibilita cualquier movimiento, sumiéndolo en una animación suspendida de hasta tres años. Contiene una baliza para facilitar el rescate. Se desactiva al entrar en una atmósfera y ambiente concretos.</td>
+                      <td>150000 Fénix</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Escudos -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#escudos">
+          Escudos
+        </button>
+        <div class="modal fade" id="escudos" tabindex="-1" role="dialog" aria-labelledby="escudosModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="escudosModal">Escudos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Escudo</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Escudo pequeño</td>
+                      <td>7 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Escudo grande</td>
+                      <td>15 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Antibalas</td>
+                      <td>+5 Fénix</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Escudos energéticos y deflectores -->
+        <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#escudosEnergeticos">
+          Escudos energéticos y deflectores
+        </button>
+        <div class="modal fade" id="escudosEnergeticos" tabindex="-1" role="dialog" aria-labelledby="escudosEnergeticosModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="escudosEnergeticosModal">Escudos energéticos y deflectores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <p>Al tirar los dados de daño, todos los números que salgan iguales al mayor número de Protección o menores no producen daño. Los escudos energéticos no se pueden construir hoy en día, pero hay muchos ingenieros (no del gremio exclusivamente) que los pueden reparar. Con grandes áreas de impacto o con seis o más impactos pequeños consecutivos, el escudo energético puede fallar y sobrecargarse. Si ocurre esto:<br></p>
+                  <ul>
+                    <li>Se debe tirar un dado sobre 13</li>
+                    <li>De 1 a 13: se tira normalmente</li>
+                    <li>De 14 a 19: absorve todo el daño y se mantiene inactivo ese mismo número de turnos</li>
+                    <li>Con 20: el escudo energético no absorve ningún impacto y gasta por completo su pila de fusión.</li>
+                  </ul>
+                </div>
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Escudo energético</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Escudo estándar:</strong> 1/5 de rango y 10 impactos. Se puede llevar con:
+                        <ul>
+                          <li>Ropas acolchadas</li>
+                          <li>Ropas pesadas</li>
+                          <li>Sinteseda</li>
+                          <li>Polímero tejido</li>
+                        </ul>
+                      </td>
+                      <td>500 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Escudo de duelo:</strong> 1/5 de rango y 15 impactos. Se puede ocultar. Se puede llevar con:
+                        <ul>
+                          <li>Ropas acolchadas</li>
+                          <li>Ropas pesadas</li>
+                          <li>Sinteseda</li>
+                          <li>Polímero tejido</li>
+                        </ul>
+                      </td>
+                      <td>1000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Escudo de asalto:</strong> 1/10 de rango y 20 impactos. Se puede ocultar. Es muy raro de encontrar. Se puede llevar con:
+                        <ul>
+                          <li>Ropas acolchadas</li>
+                          <li>Ropas pesadas</li>
+                          <li>Justillo de cuero</li>
+                          <li>Cuero endurecido</li>
+                          <li>Armadura de escamas</li>
+                          <li>Media coraza</li>
+                          <li>Sinteseda</li>
+                          <li>Polímero tejido</li>
+                        </ul>
+                      </td>
+                      <td>3000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Escudo de batalla:</strong> 1/15 de rango y 30 impactos. Se puede ocultar. Es el más raro de encontrar. Se puede llevar cualquier tipo de armadura con este escudo energético.
+                      </td>
+                      <td>5000 Fénix</td>
+                    </tr>
+                </table>
+                <h5>Deflectores</h5>
+                <ul>
+                  <li>Funcionan durante una escena</li>
+                  <li>Requiere una reparación con herramientas de alta tecnología y un cambio de pilas durante una sesión completa para que vuelva a funcionar</li>
+                  <li>Son ilegales</li>
+                  <li>Usados en una nave puede producir daños importantes</li>
+                </ul>
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Deflectores de escudos energéticos</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 metros/1 pila</td>
+                      <td>900 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>25 metros/2 pila</td>
+                      <td>1000 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>50 metros/3 pila</td>
+                      <td>1100 Fénix</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
