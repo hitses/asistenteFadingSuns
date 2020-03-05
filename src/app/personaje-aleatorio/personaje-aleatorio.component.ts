@@ -24,6 +24,9 @@ export class PersonajeAleatorioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  personajeAleatorio() {
     this.generoAleatorio();
     this.razaAleatoria();
     this.claseAleatoria();
