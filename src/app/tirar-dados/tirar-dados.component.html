@@ -1,1 +1,13 @@
-<p>tirar-dados works!</p>
+<h1 class="display-4 text-center">Tirada aleatoria de dados</h1>
+<div class="container-fluid">
+  <div class="container">
+    <form action="send">
+      <input appAutofocus type="number" [(ngModel)]="input" placeholder="Número de dados" name="IntroducirDados">
+      <button type="submit" (click)="dadosAleatorios()">Tirar dados</button>
+    </form>
+    
+    <ol>
+      <li *ngFor="let resultado of tiradaResultado">{{ resultado }}</li>
+    </ol>
+  </div>
+</div>
