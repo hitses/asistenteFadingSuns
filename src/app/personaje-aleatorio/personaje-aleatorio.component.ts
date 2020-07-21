@@ -20,6 +20,7 @@ export class PersonajeAleatorioComponent implements OnInit {
   adjective: string;
   powers: string[];
   power: string;
+  randomNumber: number;
 
   constructor() { }
 
@@ -41,25 +42,45 @@ export class PersonajeAleatorioComponent implements OnInit {
   }
 
   razaAleatoria() {
+    const FOR_HUMAN = 60;
+    const FOR_OBUN = 70;
+    const FOR_UKAR = 80;
+    this.randomNumber = Math.floor(Math.random() * (1 - 101)) + 101;
     if (this.genre === 'Mujer') {
       // tslint:disable-next-line: max-line-length
-      this.races = ['Humana', 'Ur-Obún', 'Ur-Ukar', 'Vórox', 'Bárbara Vúldrok', 'Bárbara Kurgana', 'Shántor (hembra percherona)', 'Gánnock (hembra simiesca)', 'Etyri (mujer pájaro)', 'Hirónem (mujer lagarto)', 'Ascorbita (insectoide)', 'Oro\'ym (sirena o hembra tritona)', 'Infiltrada Simbionte (no permitido salvo para partidas donde haya personajes de esta especie)', 'Mandarina Vau (no permitido salvo para partidas donde haya personajes de esta especie)'];
-      this.race = this.races[Math.floor(Math.random() * this.races.length)];
+      this.races = ['Vórox', 'Bárbara vúldrok', 'Bárbara kurgana', 'Shántor (percherona)', 'Gánnock (simiesca)', 'Etyri (mujer pájaro)', 'Hirónem (mujer lagarto)', 'Ascorbita (mujer insectoide)', 'Oro\'ym (sirena o tritona)', 'Infiltrada simbionte (no permitido salvo para partidas donde haya personajes de esta especie)', 'Mandarina Vau (no permitido salvo para partidas donde haya personajes de esta especie)'];
+      if (this.randomNumber <= FOR_HUMAN) {
+        this.race = 'Humana';
+      } else if (this.randomNumber > FOR_HUMAN && this.randomNumber <= FOR_OBUN) {
+        this.race = 'Ur-Obún';
+      } else if (this.randomNumber > FOR_OBUN && this.randomNumber <= FOR_UKAR) {
+        this.race = 'Ur-Ukar';
+      } else if (this.randomNumber > FOR_UKAR) {
+        this.race = this.races[Math.floor(Math.random() * this.races.length)];
+      }
     } else if (this.genre === 'Hombre') {
       // tslint:disable-next-line: max-line-length
-      this.races = ['Humano', 'Ur-Obún', 'Ur-Ukar', 'Vórox', 'Bárbaro Vúldrok', 'Bárbaro Kurgano', 'Shántor (percherón)', 'Gánnock (simiesco)', 'Etyri (hombre pájaro)', 'Hirónem (hombre lagarto)', 'Ascorbita (insectoide)', 'Oro\'ym (tritón)', 'Infiltrado Simbionte (volver a crear otro personaje)', 'Mandarín Vau (volver a crear otro personaje)'];
-      this.race = this.races[Math.floor(Math.random() * this.races.length)];
+      this.races = ['Vórox', 'Bárbaro vúldrok', 'Bárbaro kurgano', 'Shántor (percherón)', 'Gánnock (simiesco)', 'Etyri (hombre pájaro)', 'Hirónem (hombre lagarto)', 'Ascorbita (insectoide)', 'Oro\'ym (tritón)', 'Infiltrado Simbionte (no permitido salvo para partidas donde haya personajes de esta especie)', 'Mandarín Vau (no permitido salvo para partidas donde haya personajes de esta especie)'];
+      if (this.randomNumber <= FOR_HUMAN) {
+        this.race = 'Humano';
+      } else if (this.randomNumber > FOR_HUMAN && this.randomNumber <= FOR_OBUN) {
+        this.race = 'Ur-Obún';
+      } else if (this.randomNumber > FOR_OBUN && this.randomNumber <= FOR_UKAR) {
+        this.race = 'Ur-Ukar';
+      } else if (this.randomNumber > FOR_UKAR) {
+        this.race = this.races[Math.floor(Math.random() * this.races.length)];
+      }
     }
   }
 
   claseAleatoria() {
     if (this.genre === 'Mujer') {
       // tslint:disable-next-line: max-line-length
-      this.classes = ['Hawkwood', 'Decados', 'Hazat', 'Li Halan', 'al-Malik', 'Ortodoxa', 'Hermana de batalla', 'Eskatónica', 'Amalteana', 'Avestita', 'Hesicasta', 'Chorali (secta de Venecia que oran con sus cántos al Pancreator)', 'Gjarti (las chamanas)', 'Manja (las creyentes funerarias)', 'Auriga', 'Ingeniera', 'Carroñera', 'Asambleista (Esclavista)', 'Magistrada (Cara Gris)', 'Máscara (gremio de entretenimiento de la Segunda República)', 'Feriante (La Jauría)', 'Asesina', 'Vagabunda', 'Prospectora (del espacio)', 'Apotecaria (sanadora de gremio, no eclesiástico)', 'Armera', 'Cortesana', 'Bromista', 'Mujer libre'];
+      this.classes = ['Hawkwood', 'Decados', 'Hazat', 'Li Halan', 'al-Malik', 'Ortodoxa', 'Hermana de batalla', 'Eskatónica', 'Amalteana', 'Avestita', 'Hesicasta', 'Chorali (secta de Venecia que ora con sus cantos al Pancreator)', 'Gjarti (chamanas de la naturaleza)', 'Manja (las creyentes funerarias)', 'Auriga', 'Ingeniera', 'Carroñera', 'Asambleista (Esclavista)', 'Magistrada (Cara Gris)', 'Máscara (gremio de entretenimiento de la Segunda República)', 'Feriante (La Jauría)', 'Asesina', 'Vagabunda', 'Prospectora (del espacio)', 'Apotecaria (sanadora de gremio, no eclesiástico)', 'Armera', 'Cortesana', 'Bromista', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre', 'Mujer libre'];
       this.class = this.classes[Math.floor(Math.random() * this.classes.length)];
     } else if (this.genre === 'Hombre') {
       // tslint:disable-next-line: max-line-length
-      this.classes = ['Hawkwood', 'Decados', 'Hazat', 'Li Halan', 'al-Malik', 'Ortodoxo', 'Hermano de batalla', 'Eskatónico', 'Amalteano', 'Avestita', 'Hesicasto', 'Chorali (secta de Venecia que oran con sus cántos al Pancreator)', 'Gjarti (los chamanes)', 'Manja (los creyentes funerarios)', 'Auriga', 'Ingeniero', 'Carroñero', 'Asambleista (Esclavista)', 'Magistrado (Cara Gris)', 'Máscara (gremio de entretenimiento de la Segunda República)', 'Feriante (La Jauría)', 'Asesino', 'Vagabundo', 'Prospector (del espacio)', 'Apotecario (sanador de gremio, no eclesiástico)', 'Armero', 'Cortesano', 'Bromista', 'Hombre libre'];
+      this.classes = ['Hawkwood', 'Decados', 'Hazat', 'Li Halan', 'al-Malik', 'Ortodoxo', 'Hermano de batalla', 'Eskatónico', 'Amalteano', 'Avestita', 'Hesicasto', 'Chorali (secta de Venecia que ora con sus cantos al Pancreator)', 'Gjarti (chamanes de la naturaleza)', 'Manja (los creyentes funerarios)', 'Auriga', 'Ingeniero', 'Carroñero', 'Asambleista (Esclavista)', 'Magistrado (Cara Gris)', 'Máscara (gremio de entretenimiento de la Segunda República)', 'Feriante (La Jauría)', 'Asesino', 'Vagabundo', 'Prospector (del espacio)', 'Apotecario (sanador de gremio, no eclesiástico)', 'Armero', 'Cortesano', 'Bromista', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre', 'Hombre libre'];
       this.class = this.classes[Math.floor(Math.random() * this.classes.length)];
     }
   }
