@@ -1,13 +1,24 @@
 <h1 class="display-4 text-center">Personaje aleatorio</h1>
-<button type="submit" (click)="personajeAleatorio()">Generar personaje aleatorio</button>
-<div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-success btn-lg mx-auto" type="submit" (click)="personajeAleatorio()">Generar personaje aleatorio</button>
+    </div>
+  </div>
+</div>
+<div *ngIf='genre' class="personajeCreado">
   <p *ngIf="genre"><strong>Raza:</strong> {{ genre }} {{ race }}</p>
   <p *ngIf="class"><strong>Alianza:</strong> {{ class }}</p>
-  <p *ngIf="caract"><strong>Característica:</strong> {{ caract }}</p>
-  <p *ngIf="adjective"><strong>Forma de ser:</strong> {{ adjective }}</p>
-  <p *ngIf="power"><strong>Poderes:</strong> {{ power }}</p>
   <p *ngIf="cuerpo"><strong>Cuerpo:</strong> Fuerza {{ fuerza }}, Destreza {{ destreza }}, Resistencia {{ resistencia }}</p>
   <p *ngIf="mente"><strong>Mente:</strong> Inteligencia {{ inteligencia }}, Percepción {{ percepcion }}, Tecnología {{ tecnologia }}</p>
   <p *ngIf="espiritu"><strong>Espíritu:</strong> Extroversión {{ extrovertido }}, Introversión {{ introvertido }}, Calma {{ calma }}, Pasión {{ pasion }}, Fe {{ fe }}, Ego {{ ego }}, Humano {{ humano }}, Alienígena {{ alienigena }}</p>
   <p *ngIf='habilidadesNaturales'><strong>Habilidades naturales:</strong> Acechar {{acechar}}, Concentración {{concentracion}}, Disparo {{disparo}}, Encanto {{encanto}}, Esquivar {{esquivar}}, Lucha {{lucha}}, Observar {{observar}}, Pelea {{pelea}}, Presencia {{presencia}}, Vigor {{vigor}}</p>
+  <p *ngIf='vida'><strong>Vida:</strong> {{vida}} <span *ngFor="let i of [].constructor(vida)">O</span></p>
+  <p *ngIf='wyrd'><strong>Wyrd:</strong> {{wyrd}} <span *ngFor="let i of [].constructor(wyrd)">O</span></p>
+  <p *ngIf="power"><strong>Ocultismo:</strong> {{ power }}</p>
+  <p *ngIf="arma"><strong>Arma:</strong> {{ arma }}</p>
+  <p *ngIf="armadura"><strong>Armadura:</strong> {{ armadura }}</p>
+  <p *ngIf="escudoEnergetico"><strong>Escudo energético:</strong> {{ escudoEnergetico }}</p>
+  <p *ngIf="caract"><strong>Característica:</strong> {{ caract }}</p>
+  <p *ngIf="adjective"><strong>Forma de ser:</strong> {{ adjective }}</p>
 </div>

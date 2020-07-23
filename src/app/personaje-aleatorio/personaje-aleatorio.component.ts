@@ -48,6 +48,11 @@ export class PersonajeAleatorioComponent implements OnInit {
   pelea: number;
   presencia: number;
   vigor: number;
+  wyrd: number;
+  vida: number;
+  arma: string;
+  armadura: string;
+  escudoEnergetico: string;
 
   constructor() { }
 
@@ -59,12 +64,16 @@ export class PersonajeAleatorioComponent implements OnInit {
     this.razaAleatoria();
     this.cuerpoAleatorio();
     this.claseAleatoria();
-    this.característicaAleatoria();
-    this.formaDeSerAleatoria();
     this.poderesAleatorios();
     this.menteAleatorio();
     this.espirituAleatorio();
     this.habilidadesNaturalesAleatorio();
+    this.wyrdAleatorio();
+    this.vidaCalculo();
+    this.equipoAleatorio();
+    this.escudoEnergeticoAleatorio();
+    /* this.característicaAleatoria();
+    this.formaDeSerAleatoria(); */
   }
 
   generoAleatorio() {
@@ -283,6 +292,86 @@ export class PersonajeAleatorioComponent implements OnInit {
     this.vigor = Math.floor(Math.random() * (MIN - MAX)) + MAX;
   }
 
+  wyrdAleatorio() {
+    if (this.power === 'Psi') {
+      if (this.extrovertido > this.introvertido) {
+        this.wyrd = this.extrovertido;
+      } else {
+        this.wyrd = this.introvertido;
+      }
+    } else if (this.power === 'Teurgia') {
+      this.wyrd = this.fe;
+    } else {
+      if (this.calma > this.pasion) {
+        this.wyrd = this.calma;
+      } else {
+        this.wyrd = this.pasion;
+      }
+    }
+  }
+
+  equipoAleatorio() {
+    const ARMAS = [
+      'Puñal con daño 4',
+      'Estoque con daño 5',
+      'Espada con daño 6',
+      'Cimitarra con daño 6',
+      'Espada a dos manos con daño 8',
+      'Maza con daño 5',
+      'Mayal con daño 4',
+      'Revólver ligero con daño 4',
+      'Pistola automática con daño 4',
+      'Revólver medio con daño 5',
+      'Pistola automática media con daño 5',
+      'Revólver pesado con daño 6',
+      'Pistola automática pesada con daño 6',
+      'Fusil de asalto con daño 7',
+      'Rifle de precisión con daño 7',
+      'Ametralladora con daño 5',
+      'Escopeta con daño 8',
+      'Pistola láser con daño 5',
+      'Pistola bláster con daño 7',
+    ];
+    const ARMADURAS = [
+      'Ropa acolcahada 1',
+      'Ropas pesadas 2',
+      'Justillo de cuero 2+2D',
+      'Cuero reforzado 2+3D',
+      'Cota de escamas 3+3D',
+      'Cota de malla 4+4D',
+      'Coraza 5+5D',
+      'Sinteseda 2+2D',
+      'Acerámica 7+7D',
+    ];
+
+    this.arma = ARMAS[Math.floor(Math.random() * ARMAS.length)];
+    this.armadura = ARMADURAS[Math.floor(Math.random() * ARMADURAS.length)];
+  }
+
+  escudoEnergeticoAleatorio() {
+    const SIN_ESCUDO = 60;
+    const RANDOM_NUMBER = Math.floor(Math.random() * (1 - 101)) + 101;
+
+    if (RANDOM_NUMBER <= SIN_ESCUDO) {
+      this.escudoEnergetico = '';
+    } else if (RANDOM_NUMBER > SIN_ESCUDO) {
+      const ESTANDAR = 40;
+      const DUELO = 70;
+      const ASALTO = 90;
+      const NUMERO_ALEATORIO = Math.floor(Math.random() * (1 - 101)) + 101;
+
+      if (NUMERO_ALEATORIO <= ESTANDAR) {
+        this.escudoEnergetico = 'Escudo energético estándar 1/5 y 10 impactos';
+      } else if (NUMERO_ALEATORIO > ESTANDAR && NUMERO_ALEATORIO <= DUELO) {
+        this.escudoEnergetico = 'Escudo energético de duelo 1/5 y 15 impactos';
+      } else if (NUMERO_ALEATORIO > DUELO && NUMERO_ALEATORIO <= ASALTO) {
+        this.escudoEnergetico = 'Escudo energético de asalto 1/10 y 20 impactos';
+      } else if (NUMERO_ALEATORIO > ASALTO) {
+        this.escudoEnergetico = 'Escudo energético de batalla 1/15 y 30 impactos';
+      }
+    }
+  }
+
   característicaAleatoria() {
     if (this.genre === 'mujer') {
       this.caracts = [
@@ -442,6 +531,14 @@ export class PersonajeAleatorioComponent implements OnInit {
   poderesAleatorios() {
     this.powers = ['Tiene poderes', 'No tiene poderes'];
     this.power = this.powers[Math.floor(Math.random() * this.powers.length)];
+    if (this.power === 'Tiene poderes') {
+      const OCULTISMO = ['Psi', 'Teurgia'];
+      this.power = OCULTISMO[Math.floor(Math.random() * OCULTISMO.length)];
+    }
+  }
+
+  vidaCalculo() {
+    this.vida = 5 + this.resistencia;
   }
 
 }
