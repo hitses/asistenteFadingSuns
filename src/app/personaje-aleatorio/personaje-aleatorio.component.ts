@@ -37,6 +37,17 @@ export class PersonajeAleatorioComponent implements OnInit {
   ego: number;
   humano: number;
   alienigena: number;
+  habilidadesNaturales: number;
+  acechar: number;
+  concentracion: number;
+  disparo: number;
+  encanto: number;
+  esquivar: number;
+  lucha: number;
+  observar: number;
+  pelea: number;
+  presencia: number;
+  vigor: number;
 
   constructor() { }
 
@@ -53,6 +64,7 @@ export class PersonajeAleatorioComponent implements OnInit {
     this.poderesAleatorios();
     this.menteAleatorio();
     this.espirituAleatorio();
+    this.habilidadesNaturalesAleatorio();
   }
 
   generoAleatorio() {
@@ -251,6 +263,24 @@ export class PersonajeAleatorioComponent implements OnInit {
       this.humano = 0;
       this.alienigena = 3;
     }
+  }
+
+  habilidadesNaturalesAleatorio() {
+    const MIN = 3;
+    const MAX = 10;
+
+    this.habilidadesNaturales = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+
+    this.acechar = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.concentracion = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.disparo = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.encanto = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.esquivar = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.lucha = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.observar = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.pelea = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.presencia = Math.floor(Math.random() * (MIN - MAX)) + MAX;
+    this.vigor = Math.floor(Math.random() * (MIN - MAX)) + MAX;
   }
 
   característicaAleatoria() {
