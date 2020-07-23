@@ -1,25 +1,3 @@
 nav {
-  padding: 1.5em;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  .rated{
-    text-align: center;
-  }
-  a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 1em;
-  }
-  .active{
-    color: rgb(231, 231, 117);
-    cursor: default;
-  }
-}
-
-@media (max-width: 425px) {
-  nav{
-    font-size: 0.6em;
-  }
+  min-height: 64px;
 }
