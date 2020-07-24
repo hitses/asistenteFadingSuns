@@ -17,7 +17,7 @@
           Armas cuerpo a cuerpo
         </button>
         <div class="modal fade" id="armasCuerpoACuerpo" tabindex="-1" role="dialog" aria-labelledby="armasCuerpoACuerpoModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog modal-dialog-scrollable modal-xl-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armasCuerpoACuerpoModal">Armas cuerpo a cuerpo</h5>
@@ -30,48 +30,100 @@
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Fuerza</th>
+                      <th scope="col">Tamaño</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><strong>Cuchillo:</strong> única arma permitida a los campesinos</td>
+                      <td>Destreza+Lucha</td>
+                      <td>3</td>
+                      <td>1</td>
+                      <td>Pequeño</td>
                       <td>2 Fénix</td>
                     </tr>
                     <tr>
                       <td>Puñal</td>
+                      <td>Destreza+Lucha</td>
+                      <td>4</td>
+                      <td>2</td>
+                      <td>Mediano</td>
                       <td>4 Fénix</td>
                     </tr>
                     <tr>
                       <td><strong>Estoque:</strong> no activa los escudos energéticos</td>
+                      <td>Destreza+Lucha</td>
+                      <td>5</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>10 Fénix</td>
                     </tr>
                     <tr>
                       <td>Espada</td>
+                      <td>Destreza+Lucha</td>
+                      <td>6</td>
+                      <td>4</td>
+                      <td>Grande</td>
                       <td>15 Fénix</td>
                     </tr>
                     <tr>
                       <td>Cimitarra</td>
+                      <td>Destreza+Lucha</td>
+                      <td>6</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>20 Fénix</td>
                     </tr>
                     <tr>
                       <td>Espada a dos manos</td>
+                      <td>Destreza+Lucha</td>
+                      <td>8</td>
+                      <td>6</td>
+                      <td>Muy grande</td>
                       <td>30 Fénix</td>
                     </tr>
                     <tr>
+                      <td>Hacha</td>
+                      <td>Destreza+Lucha</td>
+                      <td>7</td>
+                      <td>5</td>
+                      <td>Grande</td>
+                      <td>25 Fénix</td>
+                    </tr>
+                    <tr>
                       <td>Garrote</td>
+                      <td>Destreza+Lucha</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>Despreciable</td>
                     </tr>
                     <tr>
                       <td>Maza</td>
+                      <td>Destreza+Lucha</td>
+                      <td>5</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>10 Fénix</td>
                     </tr>
                     <tr>
                       <td>Mayal: típico nunchaku</td>
+                      <td>Destreza+Lucha</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Grande</td>
                       <td>4 Fénix</td>
                     </tr>
                     <tr>
                       <td>Bastón</td>
+                      <td>Destreza+Lucha</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>Grande</td>
                       <td>Despreciable</td>
                     </tr>
                   </tbody>
@@ -85,7 +137,7 @@
           Artefactos cuerpo a cuerpo
         </button>
         <div class="modal fade" id="artefactosCuerpoACuerpo" tabindex="-1" role="dialog" aria-labelledby="artefactosCuerpoACuerpoModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="artefactosCuerpoACuerpoModal">Artefactos cuerpo a cuerpo</h5>
@@ -98,24 +150,49 @@
                   <thead>
                     <tr>
                       <th scope="col">Artefacto</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Dificultad</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Fuerza</th>
+                      <th scope="col">Tamaño</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><strong>Vibrofilo:</strong> modificación a un arma de filo mediante un aparato eléctrico. Produce zumbidos a la hoja. Apagada, el arma produce un dado menos de daño. Encendido, el arma atraviesa más fácilmente los escudos de energía. Suma uno al daño requerido para activar el escudo y resta un dado a sus máximos. Es necesaria una pila de fusión para 25 turnos de uso.</td>
+                      <td>Destreza+Lucha</td>
+                      <td>-</td>
+                      <td>Apagada: -1 Encendida: +1</td>
+                      <td>-</td>
+                      <td>-</td>
                       <td>+100 Fénix</td>
                     </tr>
                     <tr>
                       <td><strong>Filoespada:</strong> cortan la carne sin ninguna resistencia. Es necesaria una pila de fusión para 30 turnos de uso. se puede filtrar a través de escudos energéticos. Una tirada de 1, 2, 3, 4 ó 5 ignora el escudo. Es necesaria una pila de fusión para 30 turnos. Están construidas con tecnología arcana, de manera que hoy en día práticamente no se fabrican.</td>
+                      <td>Destreza+Lucha</td>
+                      <td>-</td>
+                      <td>7</td>
+                      <td>2</td>
+                      <td>Grande</td>
                       <td>+10000 Fénix</td>
                     </tr>
                     <tr>
                       <td><strong>Espada de flujo:</strong> activada, crea un campo de energía que recubre la hoja de plasma. Cualquier cosa que entre en contacto con ella se verá seriamente dañado. Las tiradas de 1, 2, 3, 4 y 5 obvian el escudo energético. La pila dura 30 turnos. Hoy en día no pueden fabricarse. Quedan 10, pero esa información está perdida.</td>
+                      <td>Destreza+Lucha</td>
+                      <td>+1</td>
+                      <td>6</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>+15000 Fénix</td>
                     </tr>
                     <tr>
                       <td><strong>Espada de Niebla:</strong> es necesario tener nivel de Psi para poder utilizarla. Para sintonizarla se deben recoger un total de 20 puntos de victoria de Psi + Concentración. Mano lejana cuesta un punto menos de Wyrd sobre ella. Se pueden invertir puntos de Wyrd para incrementar las tiradas de dificultad o los dados de daño. La máxima cantidad de puntos de Wyrd canalizables es el valor máximo de Psi del personaje. Es el artefacto más raro de la Segunda República y es único. Paradero desconocido.</td>
+                      <td>Destreza+Lucha</td>
+                      <td>+1</td>
+                      <td>6</td>
+                      <td>3</td>
+                      <td>Grande</td>
                       <td>Incalculable</td>
                     </tr>
                   </tbody>
@@ -129,7 +206,7 @@
           Armas arrojadizas
         </button>
         <div class="modal fade" id="armasArrojadizas" tabindex="-1" role="dialog" aria-labelledby="armasArrojadizasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armasArrojadizasModal">Armas arrojadizas</h5>
@@ -142,20 +219,44 @@
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Fuerza</th>
+                      <th scope="col">Alcance</th>
+                      <th scope="col">Cadencia</th>
+                      <th scope="col">Tamaño</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Cuchillo arrojadizo</td>
+                      <td scope="col">Destreza+Lanzar</td>
+                      <td scope="col">3</td>
+                      <td scope="col">3</td>
+                      <td scope="col">5/10</td>
+                      <td scope="col">2**</td>
+                      <td scope="col">Pequeño</td>
                       <td>2 Fénix la unidad</td>
                     </tr>
                     <tr>
                       <td>Estrella arrojadiza</td>
+                      <td scope="col">Destreza+Lanzar</td>
+                      <td scope="col">2</td>
+                      <td scope="col">2</td>
+                      <td scope="col">5/10</td>
+                      <td scope="col">2**</td>
+                      <td scope="col">Muy pequeña</td>
                       <td>2 Fénix la unidad</td>
                     </tr>
                     <tr>
                       <td>Dardo</td>
+                      <td scope="col">Destreza+Lanzar</td>
+                      <td scope="col">2</td>
+                      <td scope="col">2</td>
+                      <td scope="col">5/10</td>
+                      <td scope="col">2**</td>
+                      <td scope="col">Muy pequeño</td>
                       <td>2 Fénix la unidad</td>
                     </tr>
                   </tbody>
@@ -169,7 +270,7 @@
           Arcos y ballestas
         </button>
         <div class="modal fade" id="arcosYBallestas" tabindex="-1" role="dialog" aria-labelledby="arcosYBallestasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="arcosYBallestasModal">Arcos y ballestas</h5>
@@ -181,45 +282,100 @@
                 <table class="table table-borderless table-sm table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">Arco/Ballesta</th>
-                      <th scope="col">Precio</th>
-                      <th scope="col">Munición</th>
+                      <th scope="col">Arco</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Fuerza</th>
+                      <th scope="col">Alcance</th>
+                      <th scope="col">Cadencia</th>
+                      <th scope="col">Tamaño</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Arco de caza</td>
+                      <td scope="col">Destreza+Arco</td>
+                      <td scope="col">4</td>
+                      <td scope="col">4</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Mediano</td>
                       <td>5 Fénix</td>
-                      <td>Flecha</td>
-                      <td>1 Ala la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Arco largo</td>
+                      <td scope="col">Destreza+Arco</td>
+                      <td scope="col">6</td>
+                      <td scope="col">6</td>
+                      <td scope="col">40/60</td>
+                      <td scope="col">2</td>
+                      <td scope="col">Grande</td>
+                      <td>6 Fénix</td>
                     </tr>
                     <tr>
                       <td>Arco de precisión</td>
+                      <td scope="col">Destreza+Arco</td>
+                      <td scope="col">3</td>
+                      <td scope="col">3</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">2</td>
+                      <td scope="col">Mediano</td>
                       <td>7 Fénix</td>
-                      <td>Saeta pequeña</td>
-                      <td>3 Ala la unidad</td>
-                    </tr>
-                    <tr>
-                      <td>Ballesta de mano</td>
-                      <td>7 Fénix</td>
-                      <td>Saeta</td>
-                      <td>1 Blasón la unidad</td>
-                    </tr>
-                    <tr>
-                      <td>Ballesta media</td>
-                      <td>10 Fénix</td>
-                      <td>Saeta</td>
-                      <td>1 Blasón la unidad</td>
-                    </tr>
-                    <tr>
-                      <td>Ballesta pesada</td>
-                      <td>15 Fénix</td>
-                      <td>Saeta</td>
-                      <td>1 Blasón la unidad</td>
                     </tr>
                   </tbody>
                 </table>
+                <p>Los arcos utilizan Flechas como munición.</p>
+                <p>El Arco de precisión puede utilizar Saetas pequeñas como munición.</p>
+                <p>Los arcos obtienen una reducción de un punto de dificultad por cada nivel de Fuerza requerido que esté por encima del propio del personaje. Si un personaje tiene 4 puntos de Fuerza y utiliza un Arco largo su dificultad aumenta en +2 puntos.</p>
+                <table class="table table-borderless table-sm table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Ballesta</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Fuerza</th>
+                      <th scope="col">Alcance</th>
+                      <th scope="col">Cadencia</th>
+                      <th scope="col">Tamaño</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ballesta de mano</td>
+                      <td scope="col">Destreza+Ballesta</td>
+                      <td scope="col">2</td>
+                      <td scope="col">3</td>
+                      <td scope="col">10/20</td>
+                      <td scope="col">1</td>
+                      <td scope="col">Pequeña</td>
+                      <td>7 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Ballesta media</td>
+                      <td scope="col">Destreza+Ballesta</td>
+                      <td scope="col">3</td>
+                      <td scope="col">6</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">1</td>
+                      <td scope="col">Mediana</td>
+                      <td>10 Fénix</td>
+                    </tr>
+                    <tr>
+                      <td>Ballesta pesada</td>
+                      <td scope="col">Destreza+Ballesta</td>
+                      <td scope="col">3</td>
+                      <td scope="col">8</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">1</td>
+                      <td scope="col">Grande</td>
+                      <td>15 Fénix</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Las ballestas utilizan Saetas como munición.</p>
+                <p>Si el personaje no tiene la Fuerza necesaria para tensar la cuerda deberá invertir un turno entero para cargarla. Hay herramientas que pueden ayudar a tensarla.</p>
                 <table class="table table-borderless table-sm table-striped">
                   <thead>
                     <tr>
@@ -229,7 +385,19 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><strong>Punta dentada:</strong> no aumentan el daño al impactar pero para extraerlas hacenun punto de daño ignorando la armadura. Destreza + Medicina para extraerla sin penalización</td>
+                      <td>Flecha</td>
+                      <td>1 Ala la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Saeta pequeña</td>
+                      <td>3 Alas la unidad</td>
+                    </tr>
+                    <tr>
+                      <td>Saeta</td>
+                      <td>1 Blasón la unidad</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Punta dentada:</strong> no aumentan el daño al impactar pero para extraerlas hacen un punto de daño ignorando la armadura. Destreza+Medicina para extraerla sin penalización</td>
                       <td>+1 Fénix la unidad</td>
                     </tr>
                     <tr>
@@ -237,7 +405,7 @@
                       <td>+1 Fénix la unidad</td>
                     </tr>
                     <tr>
-                      <td><strong>Punta explosiva:</strong> explota únicamente al perforar la carne. Disminuye dos puntos de dificultad y sume tres dados al daño. Ignora la armadura y el escudo energético.</td>
+                      <td><strong>Punta explosiva:</strong> explota únicamente al perforar un objetivo, no al impactar en él. Disminuye dos puntos de dificultad y sume tres dados al daño. Los personajes que se encuentren a dos metros de distancia de la explosión sufren dos puntos de daño. Ignora la armadura y el escudo energético.</td>
                       <td>+5 Fénix la unidad</td>
                     </tr>
                   </tbody>
@@ -251,7 +419,7 @@
           Armas de fuego
         </button>
         <div class="modal fade" id="armasDeFuego" tabindex="-1" role="dialog" aria-labelledby="armasDeFuegoModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armasDeFuegoModal">Armas de fuego</h5>
@@ -264,60 +432,158 @@
                   <thead>
                     <tr>
                       <th scope="col">Arma</th>
+                      <th scope="col">Tirada</th>
+                      <th scope="col">Dificultad</th>
+                      <th scope="col">Daño</th>
+                      <th scope="col">Alcance</th>
+                      <th scope="col">Cargador</th>
+                      <th scope="col">Cadencia</th>
+                      <th scope="col">Tamaño</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><strong>Derringer:</strong> diseñada para ocultarse en la bota u otro lugar fácilmente accesible. Puede tratarse de un revólver (2 disparos) o una pistola automática (5 disparos).</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-1</td>
+                      <td scope="col">3</td>
+                      <td scope="col">5/10</td>
+                      <td scope="col">4</td>
+                      <td scope="col">2</td>
+                      <td scope="col">Muy pequeña</td>
                       <td>50 Fénix</td>
                     </tr>
                     <tr>
                       <td>Revólver ligero</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">4</td>
+                      <td scope="col">10/20</td>
+                      <td scope="col">6</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Pequeño</td>
                       <td>100 Fénix</td>
                     </tr>
                     <tr>
                       <td>Pistola automática</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">4</td>
+                      <td scope="col">10/20</td>
+                      <td scope="col">13</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Pequeña</td>
                       <td>150 Fénix</td>
                     </tr>
                     <tr>
                       <td>Revólver medio</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">5</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">6</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Pequeño</td>
                       <td>200 Fénix</td>
                     </tr>
                     <tr>
                       <td>Pistola automática media</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">5</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">10</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Pequeña</td>
                       <td>250 Fénix</td>
                     </tr>
                     <tr>
                       <td>Revólver pesado</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">6</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">6</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Mediano</td>
                       <td>250 Fénix</td>
                     </tr>
                     <tr>
                       <td>Pistola automática pesada</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">6</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">8</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Mediana</td>
                       <td>300 Fénix</td>
                     </tr>
                     <tr>
-                      <td>Fusil de asalto</td>
+                      <td>Fusil de asalto automático</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">7</td>
+                      <td scope="col">40/60</td>
+                      <td scope="col">30</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Muy grande</td>
                       <td>500 Fénix</td>
                     </tr>
                     <tr>
                       <td>Rifle de precisión</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">7</td>
+                      <td scope="col">50/70</td>
+                      <td scope="col">5</td>
+                      <td scope="col">2</td>
+                      <td scope="col">Muy grande</td>
                       <td>700 Fénix</td>
                     </tr>
                     <tr>
-                      <td>Ametralladora</td>
+                      <td>Ametralladora automática</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">5</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">20</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Grande</td>
                       <td>350 Fénix</td>
                     </tr>
                     <tr>
                       <td>Escopeta</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">8</td>
+                      <td scope="col">20/30</td>
+                      <td scope="col">7</td>
+                      <td scope="col">2</td>
+                      <td scope="col">Grande</td>
                       <td>300 Fénix</td>
                     </tr>
                     <tr>
                       <td>Ametralladora ligera Jahnisak(10mm)</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">9</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">30</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Grande</td>
                       <td>750 Fénix</td>
                     </tr>
                     <tr>
                       <td>Ametralladora pesada FuryStorm (10mm)</td>
+                      <td scope="col">Destreza+Disparo</td>
+                      <td scope="col">-</td>
+                      <td scope="col">10</td>
+                      <td scope="col">30/40</td>
+                      <td scope="col">25</td>
+                      <td scope="col">3</td>
+                      <td scope="col">Muy grande</td>
                       <td>1500 Fénix</td>
                     </tr>
                   </tbody>
@@ -377,7 +643,7 @@
           Armas energéticas
         </button>
         <div class="modal fade" id="armasEnergeticas" tabindex="-1" role="dialog" aria-labelledby="armasEnergeticasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armasEnergeticasModal">Armas energéticas</h5>
@@ -494,7 +760,7 @@
           Explosivos
         </button>
         <div class="modal fade" id="explosivos" tabindex="-1" role="dialog" aria-labelledby="explosivosModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="explosivosModal">Explosivos</h5>
@@ -534,7 +800,7 @@
           Armas ocultas
         </button>
         <div class="modal fade" id="armasOcultas" tabindex="-1" role="dialog" aria-labelledby="armasOcultasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armasOcultasModal">Armas ocultas</h5>
@@ -593,7 +859,7 @@
           Armaduras
         </button>
         <div class="modal fade" id="armadurasRopa" tabindex="-1" role="dialog" aria-labelledby="armadurasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="armadurasModal">Armaduras</h5>
@@ -677,7 +943,7 @@
           Escudos
         </button>
         <div class="modal fade" id="escudos" tabindex="-1" role="dialog" aria-labelledby="escudosModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="escudosModal">Escudos</h5>
@@ -717,7 +983,7 @@
           Escudos energéticos y deflectores
         </button>
         <div class="modal fade" id="escudosEnergeticos" tabindex="-1" role="dialog" aria-labelledby="escudosEnergeticosModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="escudosEnergeticosModal">Escudos energéticos y deflectores</h5>
@@ -845,7 +1111,7 @@
           Maletín médico
         </button>
         <div class="modal fade" id="equipoMedicoRopa" tabindex="-1" role="dialog" aria-labelledby="equipoMedicoModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="equipoMedicoModal">Maletín médico</h5>
@@ -905,7 +1171,7 @@
           MedPac
         </button>
         <div class="modal fade" id="medpac" tabindex="-1" role="dialog" aria-labelledby="medpacModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="medpacModal">MedPac</h5>
@@ -981,7 +1247,7 @@
           Elixires e inyectores
         </button>
         <div class="modal fade" id="elixiresInyectores" tabindex="-1" role="dialog" aria-labelledby="elixiresInyectoresModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="elixiresInyectoresModal">Elixires e inyectores</h5>
@@ -1245,7 +1511,7 @@
           Sistemas de seguridad
         </button>
         <div class="modal fade" id="sistemasSeguridad" tabindex="-1" role="dialog" aria-labelledby="sistemasSeguridadModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="sistemasSeguridadModal">Sistemas de seguridad</h5>
@@ -1285,7 +1551,7 @@
           Herramientas
         </button>
         <div class="modal fade" id="herramientasCerraduras" tabindex="-1" role="dialog" aria-labelledby="herramientasCerradurasModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="herramientasCerradurasModal">Herramientas</h5>
@@ -1435,7 +1701,7 @@
           Vehículos
         </button>
         <div class="modal fade" id="vehiculos" tabindex="-1" role="dialog" aria-labelledby="vehiculosModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="vehiculosModal">Vehículos</h5>
@@ -1484,7 +1750,7 @@
           Animales de carga
         </button>
         <div class="modal fade" id="animalesCarga" tabindex="-1" role="dialog" aria-labelledby="animalesCargaModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="animalesCargaModal">Animales de carga</h5>
@@ -1525,7 +1791,7 @@
           Naves espaciales
         </button>
         <div class="modal fade" id="navesEspaciales" tabindex="-1" role="dialog" aria-labelledby="navesEspacialesModal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="navesEspacialesModal">Naves espaciales</h5>
